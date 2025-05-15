@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>קבל הצעת מחיר</title>
+    <!-- AOS Library for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" data-aos="fade-down">
+        <div class="logo">MyBrand</div>
+        <nav>
+            <a href="#features">תכונות</a>
+            <a href="#testimonials">לקוחות</a>
+            <a href="#contact" class="cta-btn">צור קשר</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <!-- Background: image or video -->
+        <div class="hero-content" data-aos="zoom-in">
+            <h1>קבל הצעת מחיר עוד היום!</h1>
+            <p>הצטרף למאות לקוחות מרוצים וקבל שירות מקצועי ואיכותי.</p>
+            <a href="#contact" class="cta-btn">צור קשר</a>
+            <div class="countdown" id="countdown"></div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2 data-aos="fade-up">למה לבחור בנו?</h2>
+        <div class="feature-box" data-aos="fade-right">
+            <img src="icon-responsive.png" alt="responsive">
+            <h3>עיצוב רספונסיבי</h3>
+            <p>מבטיח התאמה מושלמת לכל מסך - מחשב, טאבלט וסמארטפון.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-up">
+            <img src="icon-speed.png" alt="fast">
+            <h3>ביצועים מהירים</h3>
+            <p>טעינה מהירה לשיפור חוויית המשתמש ול-SEO טוב יותר.</p>
+        </div>
+        <div class="feature-box" data-aos="fade-left">
+            <img src="icon-support.png" alt="support">
+            <h3>תמיכה 24/7</h3>
+            <p>זמינים עבורך בכל שלב, גם לאחר העלאת האתר לאוויר.</p>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h2 data-aos="fade-up">מה לקוחות מספרים</h2>
+        <div class="slider" data-aos="fade-up" data-aos-delay="100">
+            <div class="slides">
+                <div class="slide">
+                    <p>"שירות מקצועי, עיצובים מהממים והכל תוך זמן קצר!"</p>
+                    <h4>- יוסי כהן</h4>
+                </div>
+                <div class="slide">
+                    <p>"האתר שלנו רץ חלק ואנחנו מקבלים הרבה לידים חדשים מדי חודש."</p>
+                    <h4>- גל דגן</h4>
+                </div>
+                <div class="slide">
+                    <p>"פשוט מעל ומעבר לכל הציפיות."</p>
+                    <h4>- רוני לוי</h4>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button id="prev">❮</button>
+                <button id="next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 data-aos="fade-up">צור קשר עכשיו</h2>
+        <form class="contact-form" data-aos="fade-up" data-aos-delay="100">
+            <input type="text" placeholder="שם מלא" required>
+            <input type="tel" placeholder="טלפון" required>
+            <input type="email" placeholder="אימייל" required>
+            <textarea placeholder="פרטים נוספים" rows="4"></textarea>
+            <button type="submit">שלח</button>
+        </form>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" data-aos="fade-up">
+        <h2>שאלות נפוצות</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-title">מה כולל השירות?</button>
+                <div class="accordion-content">החבילה כוללת עיצוב רספונסיבי, פיתוח מהיר, ואופטימיזציה ל-SEO.</div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">כמה זמן לוקח לבנות אתר?</button>
+                <div class="accordion-content">בדרך כלל בין 7-14 ימים, תלוי במורכבות הפרויקט.</div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-title">האם יש תמיכה לאחר העלאה?</button>
+                <div class="accordion-content">כן, יש תמיכה טכנית למשך 30 יום לאחר השקת האתר.</div>
+            </div>
+        </div>
+    </section>
+
+    <button id="scrollTop">↑</button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
